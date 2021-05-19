@@ -1,0 +1,67 @@
+# Git
+
+* In this exercise, demonstrate management of:
+    * repositories on a remote Git server
+    * local repository branches
+    * workspace, stage and committed changes
+    * branching and merging strategy
+    * updates to a remote repository
+
+Exercise Pre-reqs :
+
+1. [Download Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and install on your machine
+2. [Create a GitHub account](https://github.com/join)
+3. Create a template copy of this repository by clicking : "Use this template"
+4. Ensure the new repository will be created in your account
+5. Name the repository the same name as this repository
+6. Add your TEKmentor as a collaborator
+
+
+Exercise:
+ - duplicate this repository to local machine
+        git clone [repo url]
+ - create a new 'develop' branch
+        git checkout -b develop
+    > save the local list of branches to filename 01_local_branches.txt
+        git branch > 01_local_branches.txt
+    > save the remote list of branches to filename 01_remote_branches.txt
+        git branch --remote > 01_remote_branches.txt
+ - push the 'develop' branch to the remote repository
+    > save the local list of branches to filename 02_local_branches.txt
+    > save the remote list of branches to filename 02_remote_branches.txt
+ - create a 'feature' branch for adding web page to the repository
+ - create a file named "index.html"
+    > save current status of repository to filename 03_untracked_file.txt
+ - stage the new file 
+    > save current status of repository to filename 04_staged_file.txt
+ - commit the new file to the repository
+    > save current status of repository to filename 05_committed_file
+    > save repository directory list to 05_repository_content
+    > save difference between 'feature' branch and 'develop' branch to filename 05_branch_difference.txt
+ - promote 'feature' branch to 'develop' branch
+    > save difference between 'feature' branch and 'develop' branch to filename 06_branch_difference.txt
+ - in new 'feature' branch, [describe a change to be made to filename index.html]
+    > save changes in index.html to filename 07_updated_file.txt
+ - undo changes to index.html
+    > save current status of 'feature' branch to 08_undo_untracked_changes.txt
+ - [describe different changes to be made to filename index.html]
+ - stage changes made to index.html
+ - undo staging of changes made to index.html
+    > save current status of 'feature' branch to 09_undo_staging.txt
+ - [describe different changes to index.html]
+ - commit changes made to index.html
+ - undo commitment of changes made to index.html
+    > save current status of 'feature' branch to 10_undo_commitment.txt
+ - [describe different changes to index.html]
+ - commit changes made to index.html
+ - [describe different changes to index.html]
+ - stage changes made to index.html
+ - [describe different changes to index.html
+    > save current status of 'feature' branch to 11_pre_undo_all_changes.txt
+ - completely undo workspace, staged and committed changes (git status > no changes)
+    > save current status of 'feature' branch to 12_post_undo_all_changes.txt
+ - push 'feature' branch to remote repository
+ - confirm 'feature' branch can be merged cleanly into 'develop' branch
+    > save difference between 'feature' and 'develop' branches to 13_mergable_confirmation.txt
+ - merge 'feature' branch to 'develop' branch
+    > save differences bewteen 'develop' and 'feature' branches to 14_merged.txt
